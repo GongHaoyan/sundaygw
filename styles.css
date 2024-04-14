@@ -1,0 +1,160 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #1C87E2;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.features {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.features h1 {
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.features h1::before {
+    content: '0116';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background: linear-gradient(to right, #1c87e2, transparent);
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 100%; 
+    height: 100%; 
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.download {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.download-buttons {
+    margin-top: 20px;
+}
+
+.button-ios,
+.button-android {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: #1C87E2;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-buttons a {
+    color: white;
+    margin: 0 15px;
+}
+
+.footer-link {
+    margin-top: 10px;
+}
+
+.footer-link a {
+    color: white;
+}
+
+
+.gradient-text::before {
+    content: '0116';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 72px;
+    background: linear-gradient(to right, #ffffff, transparent);
+    -webkit-background-clip: text;
+    color: white; /
+}
+
+.click-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    font-size: 20px;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.click-animation::before {
+    content: '0116';
+    color: #1C87E2; 
+    animation: fadeInOut 1s linear; 
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

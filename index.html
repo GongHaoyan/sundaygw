@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+
+    <title>0116 软件</title>
+    <style>
+     
+
+        footer {
+            color: white;
+        }
+
+        .gradient-text {
+            position: relative;
+            display: inline-block;
+        }
+
+        .gradient-text::before {
+            content: '0116';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(to right, #1C87E2, transparent);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* 设置图片样式 */
+        .apptd img {
+            width: 342px;
+            height: 753px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="0116 软件">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#apptd">软件特点</a></li>
+                <li><a href="#download">下载</a></li>
+                <li><a href="./about/team/index.html">关于团队</a></li>
+                <li><a href="./about/app/index.html">关于软件</a></li>
+                <li><a href="http://www.thenetworksafe.cn/0116/safety">安全中心</a></li> 
+                <li><a href="./faq/index.html">问题中心</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="apptd" class="apptd">
+        <h1 class="gradient-text">专为认识陌生人而生</h1>
+        <div class="apptd">
+            <h2>学校表白墙</h2>
+            <p>在我们的平台上，你可以匿名向心仪的人表白，分享你的心声。</p>
+            <img src="img/bbc1.png" alt="bbc1">
+            <img src="img/bbc2.png" alt="bbc2">
+            <img src="img/bbc3.png" alt="bbc3">
+        </div>
+        <div class="apptd">
+            <h2>3D虚拟形象</h2>
+            <p>体验全新的社交方式，通过3D虚拟形象与陌生人互动，打破传统沟通的界限。</p>
+            <img src="img/bbc1.png" alt="3d1">
+            <img src="img/bbc2.png" alt="3d2">
+            <img src="img/bbc3.png" alt="3d3">
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h1>立即下载</h1>
+        <p>0116 软件现已推出，提供iOS和Android版本，随时随地与新朋友相遇。</p>
+        <div class="download-buttons">
+            <a href="https://apps.apple.com/cn/app/%E5%BE%AE%E4%BF%A1/id414478124" class="button-ios">下载iOS版</a>
+            <a href="https://www.coolapk.com/apk/com.tencent.mm" class="button-android">下载Android版</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-buttons">
+            <a href="./about/team/index.html" class="footer-button">关于团队</a>
+            <a href="./about/app/index.html" class="footer-button">关于软件</a>
+            <a href="http://www.thenetworksafe.cn/0116/safety" class="footer-button">安全中心</a>
+            <a href="./faq/index.html" class="footer-button">问题中心</a>
+        </div>
+        <div class="footer-link">
+            <a href="https://beian.miit.gov.cn/" target="_blank">备案号：粤B2-20240001</a>
+            <p>&copy; 2024 深圳市软件. 保留所有权利。</p>
+        </div>
+    </footer>
+</body>
+</html>
